@@ -1,0 +1,26 @@
+import nemf.packages.javaz;
+import nemf.ecore.datatypes;
+import datatypes;
+machine javaz { 
+ pattern javaelement(JAVAELEMENT) = {
+   JavaElement(JAVAELEMENT);
+ }
+ pattern field(FIELD) = {
+   Field(FIELD);
+ }
+ pattern method(METHOD) = {
+   Method(METHOD);
+ }
+ pattern javaz(JAVAZ) = {
+   Javaz(JAVAZ);
+ }
+ pattern javapackagex(JAVAPACKAGEX) = {
+   JavaPackageX(JAVAPACKAGEX);
+ }
+ pattern javaparameter(JAVAPARAMETER) = {
+   JavaParameter(JAVAPARAMETER);
+ }
+ pattern javaclass(JAVACLASS) = {
+   JavaClass(JAVACLASS);
+ }
+}

@@ -1,0 +1,20 @@
+import nemf.packages.grapho;
+import nemf.ecore.datatypes;
+import datatypes;
+machine grapho { 
+ pattern graphoeditor(GRAPHOEDITOR) = {
+   GraphOEditor(GRAPHOEDITOR);
+ }
+ pattern node(NODE) = {
+   Node(NODE);
+ }
+ pattern grapho(GRAPHO) = {
+   GraphO(GRAPHO);
+ }
+ pattern graphelement(GRAPHELEMENT) = {
+   GraphElement(GRAPHELEMENT);
+ }
+ pattern edge(EDGE) = {
+   Edge(EDGE);
+ }
+}

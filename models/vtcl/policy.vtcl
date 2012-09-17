@@ -1,0 +1,33 @@
+import nemf.packages.policy;
+import nemf.ecore.datatypes;
+import datatypes;
+machine policy { 
+ pattern user(USER) = {
+   User(USER);
+ }
+ pattern operation(OPERATION) = {
+   Operation(OPERATION);
+ }
+ pattern permission(PERMISSION) = {
+   Permission(PERMISSION);
+ }
+ pattern policyelement(POLICYELEMENT) = {
+   PolicyElement(POLICYELEMENT);
+ }
+ pattern policy(POLICY) = {
+   Policy(POLICY);
+ }
+ pattern session(SESSION) = {
+   Session(SESSION);
+ }
+ pattern constraint(CONSTRAINT) = {
+   Constraint(CONSTRAINT);
+ }
+ pattern role(ROLE) = {
+   Role(ROLE);
+ }
+ 
+ pattern object(OBJECT) = {
+   Object(OBJECT);
+ }
+}

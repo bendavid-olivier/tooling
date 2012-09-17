@@ -1,0 +1,17 @@
+import nemf.packages.mapping;
+import nemf.ecore.datatypes;
+import datatypes;
+machine mapping { 
+ pattern relation(RELATION) = {
+   Relation(RELATION);
+ }
+ pattern mappingelement(MAPPINGELEMENT) = {
+   MappingElement(MAPPINGELEMENT);
+ }
+ pattern mapping(MAPPING) = {
+   Mapping(MAPPING);
+ }
+ pattern element(ELEMENT) = {
+   Element(ELEMENT);
+ }
+}

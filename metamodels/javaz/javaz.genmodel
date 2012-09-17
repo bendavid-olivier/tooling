@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/tooling/src"
+    modelPluginID="tooling" modelName="Javaz" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>javaz.ecore</foreignModel>
+  <genPackages prefix="Javaz" disposableProviderFactory="true" ecorePackage="javaz.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="javaz.ecore#//JavaVisibilityKind">
+      <genEnumLiterals ecoreEnumLiteral="javaz.ecore#//JavaVisibilityKind/PUBLIC"/>
+      <genEnumLiterals ecoreEnumLiteral="javaz.ecore#//JavaVisibilityKind/PRIVATE"/>
+      <genEnumLiterals ecoreEnumLiteral="javaz.ecore#//JavaVisibilityKind/PROTECTED"/>
+      <genEnumLiterals ecoreEnumLiteral="javaz.ecore#//JavaVisibilityKind/PACKAGE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="javaz.ecore#//JavaKind">
+      <genEnumLiterals ecoreEnumLiteral="javaz.ecore#//JavaKind/CLASS"/>
+      <genEnumLiterals ecoreEnumLiteral="javaz.ecore#//JavaKind/INTERFACE"/>
+      <genEnumLiterals ecoreEnumLiteral="javaz.ecore#//JavaKind/EXCEPTION"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="javaz.ecore#//JavaParameterKind">
+      <genEnumLiterals ecoreEnumLiteral="javaz.ecore#//JavaParameterKind/IN"/>
+      <genEnumLiterals ecoreEnumLiteral="javaz.ecore#//JavaParameterKind/OUT"/>
+      <genEnumLiterals ecoreEnumLiteral="javaz.ecore#//JavaParameterKind/INOUT"/>
+      <genEnumLiterals ecoreEnumLiteral="javaz.ecore#//JavaParameterKind/RETURN"/>
+    </genEnums>
+    <genClasses ecoreClass="javaz.ecore#//Javaz">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference javaz.ecore#//Javaz/packages"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference javaz.ecore#//Javaz/classes"/>
+    </genClasses>
+    <genClasses ecoreClass="javaz.ecore#//JavaClass">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference javaz.ecore#//JavaClass/methods"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference javaz.ecore#//JavaClass/fields"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference javaz.ecore#//JavaClass/imports"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference javaz.ecore#//JavaClass/package"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute javaz.ecore#//JavaClass/kind"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute javaz.ecore#//JavaClass/public"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute javaz.ecore#//JavaClass/final"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference javaz.ecore#//JavaClass/extends"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference javaz.ecore#//JavaClass/implements"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute javaz.ecore#//JavaClass/rewritable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute javaz.ecore#//JavaClass/needToGenerate"/>
+    </genClasses>
+    <genClasses ecoreClass="javaz.ecore#//JavaPackageX">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute javaz.ecore#//JavaPackageX/needToGenerate"/>
+    </genClasses>
+    <genClasses ecoreClass="javaz.ecore#//JavaParameter">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute javaz.ecore#//JavaParameter/final"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute javaz.ecore#//JavaParameter/parameterKind"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute javaz.ecore#//JavaParameter/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute javaz.ecore#//JavaParameter/kind"/>
+    </genClasses>
+    <genClasses ecoreClass="javaz.ecore#//Method">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference javaz.ecore#//Method/parameters"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute javaz.ecore#//Method/visibility"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute javaz.ecore#//Method/final"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute javaz.ecore#//Method/static"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute javaz.ecore#//Method/synchronized"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute javaz.ecore#//Method/constructor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute javaz.ecore#//Method/native"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute javaz.ecore#//Method/abstract"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference javaz.ecore#//Method/block"/>
+    </genClasses>
+    <genClasses ecoreClass="javaz.ecore#//Field">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute javaz.ecore#//Field/visibility"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute javaz.ecore#//Field/static"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute javaz.ecore#//Field/transient"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute javaz.ecore#//Field/volatile"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute javaz.ecore#//Field/final"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute javaz.ecore#//Field/type"/>
+    </genClasses>
+    <genClasses ecoreClass="javaz.ecore#//JavaElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute javaz.ecore#//JavaElement/name"/>
+    </genClasses>
+    <genClasses ecoreClass="javaz.ecore#//Block">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute javaz.ecore#//Block/content"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

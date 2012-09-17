@@ -1,0 +1,26 @@
+import nemf.packages.kevoree;
+import nemf.ecore.datatypes;
+import datatypes;
+machine kevoree { 
+ pattern port(PORT) = {
+   Port(PORT);
+ }
+ pattern channel(CHANNEL) = {
+   Channel(CHANNEL);
+ }
+ pattern node(NODE) = {
+   Node(NODE);
+ }
+ pattern kevoree(KEVOREE) = {
+   Kevoree(KEVOREE);
+ }
+ pattern kevoreeelement(KEVOREEELEMENT) = {
+   KevoreeElement(KEVOREEELEMENT);
+ }
+ pattern component(COMPONENT) = {
+   Component(COMPONENT);
+ }
+ pattern binding(BINDING) = {
+   Binding(BINDING);
+ }
+}
